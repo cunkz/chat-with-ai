@@ -1,3 +1,5 @@
+![logo](./ChatWithAI.png)
+
 ## Getting Started
 
 First, set your API key for OpenAI or NVIDIA by create `.env.local` file
