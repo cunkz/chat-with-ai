@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --main-surface-secondary: #787878;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.hover\:bg-token-main-surface-secondary:hover {
+  background: var(--main-surface-secondary);
+  color: #eaeaea;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+.user-message {
+  background-color: #d4f3ef;
+  padding: 8px;
+  margin: 4px 0;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.ai-message {
+  background-color: #f4f4f5;
+  padding: 8px;
+  margin: 4px 0;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.input-message {
+  width: 100%;
+  margin-bottom: .6rem;
+  margin-top: .6rem;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.active-scroll {
+  height: 100%;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.active-source-button {
+  color: #e5e5e5;
+  background: rgba(33, 33, 33, .9);
+}
+
+.top-lead {
+  margin-left: 15px;
+}
+
+.top-lead img {
+  height: 28px;
+  width: 28px;
+}
+
+.top-lead span {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-left: 10px;
+}
