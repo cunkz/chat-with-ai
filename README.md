@@ -1,4 +1,4 @@
-![logo](./ChatWithAI.png)
+![logo](./chat-with-ai.png)
 
 ## Getting Started
 
