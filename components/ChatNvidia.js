@@ -2,6 +2,7 @@
 // components/Chat.js
 import { useState } from 'react';
 import axios from 'axios';
+import Markdown from 'react-markdown'
 
 export default function ChatNvidia() {
   const [messages, setMessages] = useState([]);
@@ -81,7 +82,7 @@ export default function ChatNvidia() {
                             >
                               <div className="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
                                 <div className="markdown prose w-full break-words dark:prose-invert dark">
-                                  <p>{msg.content}</p>
+                                  <Markdown>{msg.content}</Markdown>
                                 </div>
                               </div>
                             </div>
